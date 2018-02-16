@@ -92,6 +92,8 @@ table {
 	top: 0;
 	left: 0;
 	background: url(../imgs/main_background.jpg) no-repeat center fixed;
+	background-color: #000;
+	background-blend-mode: hard-light;
 	background-size: cover;
 }
 
@@ -473,14 +475,17 @@ h3 {
 }
 
 .grid2-ic{
-	width:1400px;
-	margin:auto;
-	overflow:hidden;
+	width: 1400px;
+	margin: auto;
+	overflow: hidden;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .grid2-mars-pass{
 	width:750px;
-	margin:auto;
 }
 
 .grid3{
@@ -495,10 +500,14 @@ h3 {
 }
 
 .grid3-ic{
-	width:1400px;
-	margin:auto;
-	overflow:hidden;
-    color:limegreen;
+	width: 1400px;
+	margin: auto;
+	overflow: hidden;
+	color: limegreen;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: left;
 }
 
 @keyframes blink {
@@ -599,6 +608,15 @@ h3 {
 	-webkit-transition: 2.5s ease-in-out;
 	-o-transition: 2.5s ease-in-out;
 	transition: 2.5s ease-in-out;
+}
+
+.grid4-box-ic figure {
+	display:flex;
+}
+
+.grid4-box-ic figure img{
+	object-fit: cover;
+	object-position: 25% 10%;
 }
 
 .grid4-box-ic>div{
