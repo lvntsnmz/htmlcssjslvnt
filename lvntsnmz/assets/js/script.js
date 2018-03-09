@@ -107,6 +107,11 @@ $(window).scroll(function(){
             $('.header').addClass('scrolldown');
         else
             $('.header').removeClass('scrolldown');
+
+        if ($(window).scrollTop() != 0)
+            $('.menu').addClass('menu-down');
+        else
+            $('.menu').removeClass('menu-down');
     };
 
     if ($(window).width()>900) {

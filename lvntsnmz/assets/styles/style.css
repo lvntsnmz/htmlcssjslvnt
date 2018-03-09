@@ -106,9 +106,10 @@ table {
 	width: 100%;
 }
 
+/* Header Başlangıç */
+
 .header{
 	width: 100%;
-	padding: 0 0 5px 0;
 	margin-top: 15px;
 	position: fixed;
 	background: rgba(255,255,255,.5);
@@ -132,6 +133,7 @@ table {
 	float:left;
 	text-align: center;
 	color:#fff;
+	padding: 0 0 5px;
 	-moz-transition: 0.5s ease-in-out;
 	-webkit-transition: 0.5s ease-in-out;
 	-o-transition: 0.5s ease-in-out;
@@ -175,6 +177,91 @@ table {
 	font-size: 2em;
 	text-shadow:none;
 }
+
+.menu {
+	display: flex;
+	justify-content: center;
+	height: 100%;
+	max-width: 600px;
+	margin: 20px auto 0;
+}
+
+.menu a{
+	text-decoration:none;
+}
+
+.menu li{
+	text-align: center;
+	float: left;
+	font-size: 12px;
+	color: #f5f5f5;
+	font-weight: 600;
+	letter-spacing: 0.5px;
+	line-height: 1;
+	text-shadow: 0 0 4px #4c4c4c;
+	margin: 0 5px;
+}
+
+.menu li i {
+	font-size: 35px;
+	-moz-transition: 0.25s ease-in-out;
+	-webkit-transition: 0.25s ease-in-out;
+	-o-transition: 0.25s ease-in-out;
+	transition: 0.25s ease-in-out;
+}
+
+.menu li p{
+	float: none;
+	margin-top: -20px;
+	opacity:0;
+	-moz-transition: 0.25s ease-in-out;
+	-webkit-transition: 0.25s ease-in-out;
+	-o-transition: 0.25s ease-in-out;
+	transition: 0.25s ease-in-out;
+}
+
+.menu li p span{
+	float:left;
+}
+
+.menu li p span:nth-child(odd){
+	margin:1px;
+}
+
+.menu li:hover i{
+	transform: rotate(360deg);
+}
+
+.menu li:hover p{
+	opacity:1;
+	margin:0;
+}
+
+.menu-down{
+	margin: 12px auto 0;
+}
+
+.menu.menu-down li{
+	color:#4c4c4c;;
+	text-shadow:none;
+}
+
+.menu.menu-down i{
+	float: left;
+	margin: 0 5px 0 0;
+	font-size: 25px;
+}
+
+.menu.menu-down p{
+	float: left;
+	opacity: 0;
+	margin-top: 0;
+	margin-left: -40px;
+	padding-top: 4px;
+}
+
+/* Header Bitiş */
+
 
 .slider{
 	width:100%;
@@ -244,6 +331,10 @@ table {
 
 .slider-social-twitter:hover{
 	background:rgba(0,172,237,1) !important;
+}
+
+.slider-social-git:hover{
+	background:#24292e !important;
 }
 
 .slider-social-mail:hover{
