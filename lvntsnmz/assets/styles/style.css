@@ -2273,7 +2273,9 @@ h1 {
 /* SOLAR SYSTEM CSS END */
 
 
-
+.body-div{
+	display:none;
+}
 
 @media screen and (max-width: 1400px){
 
