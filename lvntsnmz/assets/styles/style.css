@@ -183,7 +183,7 @@ table {
 	justify-content: center;
 	height: 100%;
 	max-width: 600px;
-	margin: 20px auto 0;
+	margin: auto;
 }
 
 .menu a{
@@ -199,7 +199,11 @@ table {
 	letter-spacing: 0.5px;
 	line-height: 1;
 	text-shadow: 0 0 4px #4c4c4c;
-	margin: 0 5px;
+	margin: 0 15px;
+}
+
+.menu.menu-up li{
+	padding: 20px 0 0;
 }
 
 .menu li i {
@@ -214,6 +218,7 @@ table {
 	float: none;
 	margin-top: -20px;
 	opacity:0;
+	overflow: hidden;
 	-moz-transition: 0.25s ease-in-out;
 	-webkit-transition: 0.25s ease-in-out;
 	-o-transition: 0.25s ease-in-out;
@@ -228,13 +233,29 @@ table {
 	margin:1px;
 }
 
-.menu li:hover i{
+.menu.menu-up li:hover i{
 	transform: rotate(360deg);
+	font-size: 20px;
+	text-shadow: 0 0 4px #000;
 }
 
-.menu li:hover p{
-	opacity:1;
-	margin:0;
+.menu.menu-down li:hover i{
+	transform: rotate(360deg);
+	font-size: 25px;
+	color:#000;
+}
+
+.menu.menu-up li:hover p{
+	opacity: 1;
+	margin-top: 10px;
+	text-shadow: 0 0 4px #000;
+}
+
+.menu.menu-down li:hover p{
+	opacity: 1;
+	margin-top: 0;
+	margin-left:0;
+	color:#000;
 }
 
 .menu-down{
@@ -395,11 +416,15 @@ table {
 
 .grid1-anime i:first-child{
 	font-size:5em;
+	webkit-animation: fa-spin 3s infinite linear;
+	animation: fa-spin 3s infinite linear;
 }
 
 .grid1-anime i:nth-last-child(1){
 	position: relative;
 	left: -35px;
+	webkit-animation: fa-spin 2s infinite linear;
+	animation: fa-spin 2s infinite linear;
 	-moz-animation-direction: reverse;
 	-o-animation-direction: reverse;
 	-webkit-animation-direction: reverse;
@@ -2273,9 +2298,9 @@ h1 {
 /* SOLAR SYSTEM CSS END */
 
 
-.body-div{
-	display:none;
-}
+/*.body-div{*/
+	/*display:none;*/
+/*}*/
 
 @media screen and (max-width: 1400px){
 
