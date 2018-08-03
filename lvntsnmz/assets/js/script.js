@@ -96,6 +96,34 @@ $(window).load(function() {
         ]
     });
 
+    $('.dizifilm-grid2-movie').slick({
+        centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 3,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        responsive: [
+            {
+                breakpoint: 600,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
+
 });
 
 
@@ -136,6 +164,27 @@ $(window).scroll(function(){
 });
 
 $(document).ready(function(){
+
+    var carousel = $("#carousel").waterwheelCarousel({
+        flankingItems: 3,
+        separation: 300
+    });
+
+    $('#prev').bind('click', function () {
+        carousel.prev();
+        return false
+    });
+
+    $('#next').bind('click', function () {
+        carousel.next();
+        return false;
+    });
+
+    $('#reload').bind('click', function () {
+        newOptions = eval("(" + $('#newoptions').val() + ")");
+        carousel.reload(newOptions);
+        return false;
+    });
 
     $('.body-div').css('height',$( window ).height()-50);
 

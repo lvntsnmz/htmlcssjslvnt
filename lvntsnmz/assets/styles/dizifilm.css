@@ -1,3 +1,22 @@
+/*font-family: 'Knewave', cursive;*/
+/*font-family: 'Gaegu', cursive;*/
+/*font-family: 'Coda Caption', sans-serif;*/
+/*font-family: 'Indie Flower', cursive;*/
+/*font-family: 'Anton', sans-serif;*/
+/*font-family: 'Amatic SC', cursive;*/
+/*font-family: 'Bangers', cursive;*/
+/*font-family: 'Julius Sans One', sans-serif;*/
+/*font-family: 'Fugaz One', cursive;*/
+/*font-family: 'Nothing You Could Do', cursive;*/
+/*font-family: 'Covered By Your Grace', cursive;*/
+/*font-family: 'Rock Salt', cursive;*/
+/*font-family: 'Days One', sans-serif;*/
+/*font-family: 'Bowlby One SC', cursive;*/
+/*font-family: 'Calligraffitti', cursive;*/
+/*font-family: 'Sue Ellen Francisco', cursive;*/
+/*font-family: 'Fontdiner Swanky', cursive;*/
+/*font-family: 'Creepster', cursive;*/
+
 .header-dizifilm{
 	background: rgba(0,0,0,0.5);
 }
@@ -12,8 +31,8 @@
 .dizifilm-slider{
 	width: 100%;
 	position: relative;
-	z-index: 2;
-	padding: 125px 0 2px;
+	z-index: 3;
+	padding: 125px 0 275px;
 }
 
 .dizifilm-slider-ic {
@@ -22,7 +41,8 @@
 }
 
 .dizifilm-slider ul{
-
+	width: 95%;
+	margin: 0 2.5%;
 }
 
 .dizifilm-slider li{
@@ -130,6 +150,10 @@
 	margin-bottom:75px;
 }
 
+.dizifilm-slider li:nth-child(-n+5) h5{
+
+}
+
 .dizifilm-slider li:nth-child(6) {
 	clear:left;
 }
@@ -138,14 +162,19 @@
 	clear: both;
 	background: linear-gradient(to right, #4c4c4c , transparent, transparent);
 	padding: 10px;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 	color: #f5f5f5;
-	font-weight: 500;
+	letter-spacing: 4px;
+	font-family: 'Bangers', cursive;
 }
 
 .dizifilm-slider li:nth-child(n+6) {
 	width: 12.5%;
 	padding: 5px;
+}
+
+.dizifilm-slider li:nth-child(n+6) div{
+
 }
 
 .dizifilm-slider li:nth-child(n+6):hover
@@ -157,14 +186,194 @@ img{
 	transform: rotate(360deg) scale(2); /* Fx 16+, IE 10+ */
 }
 
+.dizifilm-slider li:nth-child(n+6):hover
+h5{
+	opacity:1;
+	-webkit-transform: rotate(360deg) scale(2);
+	-moz-transform: rotate(360deg) scale(2);
+	-ms-transform: rotate(360deg) scale(2);
+	-o-transform: rotate(360deg) scale(2);
+	transform: rotate(360deg) scale(2);
+}
+
 .dizifilm-slider li:nth-child(n+6) h5{
+	background: rgba(0,0,0,0.5);
+	width: 100%;
+	opacity: 0;
 	display: block;
+	font-family: 'Julius Sans One', sans-serif;
+	font-size: 8px;
+	padding: 5px 0;
+	font-weight: 600;
+	color: #f5f5f5;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+	position: absolute;
+	left: 0;
+	top: 50%;
+	border-top: 1px solid #f5f5f5;
+	border-bottom: 1px solid #e5e5e5;
+	transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+}
+
+.dizifilm-grid1{
+	position: relative;
+	z-index: 2;
+	width: 100%;
+	background: #cecece;
+	padding: 50px 0;
+	background: url(../imgs/dizifilm/dizifilm-grid1.jpg) no-repeat center;
+	overflow:hidden;
+}
+
+.dizifilm-grid1-fon{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.5);
+}
+
+.dizifilm-grid1-ic{
+	width: 1400px;
+	margin: auto;
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+}
+
+.dizifilm-grid1-ic p{
+	color:#ffffff;
+	margin: 5px;
+	font-size:16px;
+}
+
+.dizifilm-grid1-ic p:nth-child(odd){
+	text-align:right;
+	font-size:20px;
+	color:#f5f5f5;
+}
+
+.dizifilm-grid1-ic p:nth-child(3n+1){
+	text-align:center;
+	font-size:24px;
+	color:#e5e5e5;
+}
+
+.dizifilm-grid1-ic p:nth-child(4n){
+	font-size:30px;
+	color: #cecece;
+}
+
+.quotes-1{
+	font-family: 'Knewave', cursive;
+}
+.quotes-2{
+	font-family: 'Gaegu', cursive;
+}
+.quotes-3{
+	font-family: 'Indie Flower', cursive;
+}
+.quotes-4{
+	font-family: 'Anton', sans-serif;
+}
+.quotes-5{
+	font-family: 'Amatic SC', cursive;
+}
+.quotes-6{
+	font-family: 'Bangers', cursive;
+}
+.quotes-7{
+	font-family: 'Julius Sans One', sans-serif;
+}
+.quotes-8{
+	font-family: 'Fugaz One', cursive;
+}
+.quotes-9{
+	font-family: 'Nothing You Could Do', cursive;
+}
+.quotes-10{
+	font-family: 'Rock Salt', cursive;
+}
+.quotes-11{
+	font-family: 'Days One', sans-serif;
+}
+.quotes-12{
+	font-family: 'Bowlby One SC', cursive;
+}
+.quotes-13{
+	font-family: 'Calligraffitti', cursive;
+}
+.quotes-14{
+	font-family: 'Creepster', cursive;
+}
+
+.dizifilm-grid2{
+	position: relative;
+	z-index: 2;
+	width: 100%;
+	padding: 50px 0;
+	overflow:hidden;
+}
+
+.dizifilm-grid2-ic{
+	width: 1400px;
+	margin: auto;
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+}
+
+.dizifilm-grid2-movie{
+	width: 90%;
+	margin: 0 5%;
+
+}
+
+.dizifilm-grid2-movie-ic{
+	text-align: center;
+	padding: 0;
+	border: 2px solid #4c4c4c;
+	margin: 10px;
+	background: rgba(255,255,255,.5);
+	overflow: hidden;
+	position: relative;
+}
+
+.dizifilm-grid2-movie-ic>img{
+	width:100%;
+}
+
+#carousel {
+	width: 1000px;
+	height: 350px;
+	position: relative;
+	clear: both;
+}
+#carousel img {
+	visibility:hidden; /* hide images until carousel can handle them */
+	cursor:pointer; /* otherwise it's not as obvious items can be clicked */
 }
 
 @media screen and (max-width: 1400px){
 
-	.dizifilm-slider-ic{
+	.dizifilm-slider-ic, .dizifilm-grid1-ic, .dizifilm-grid2-ic{
 		width: 1200px;
+	}
+
+}
+
+@media screen and (max-width: 1300px){
+
+	.dizifilm-slider-ic, .dizifilm-grid1-ic, .dizifilm-grid2-ic{
+		width:1100px;
 	}
 
 }
