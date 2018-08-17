@@ -321,6 +321,7 @@ h5{
 	width: 100%;
 	padding: 50px 0;
 	overflow:hidden;
+	display:none;
 }
 
 .dizifilm-grid2-ic{
@@ -351,20 +352,62 @@ h5{
 	width:100%;
 }
 
+.dizifilm-grid3{
+	position: relative;
+	z-index: 2;
+	width: 100%;
+	padding: 50px 0;
+	overflow:hidden;
+}
+
+.dizifilm-grid3-ic{
+	width: 1400px;
+	margin: auto;
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+}
+
 #carousel {
-	width: 1000px;
-	height: 350px;
+	width: 90%;
+	margin: 0 5%;
+	height: 500px;
 	position: relative;
 	clear: both;
 }
 #carousel img {
+	max-width:30%;
 	visibility:hidden; /* hide images until carousel can handle them */
 	cursor:pointer; /* otherwise it's not as obvious items can be clicked */
 }
 
+.dizifilm-grid3-ic #prev, .dizifilm-grid3-ic #next{
+	position: absolute;
+	top: 45%;
+	font-size: 35px;
+	color: #4c4c4c;
+	cursor:pointer;
+	opacity:.75;
+	transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+}
+
+.dizifilm-grid3-ic #prev:hover, .dizifilm-grid3-ic #next:hover{
+	opacity:1;
+}
+
+.dizifilm-grid3-ic #prev{
+	left: 5px;
+}
+
+.dizifilm-grid3-ic #next{
+	right: 5px;
+}
+
 @media screen and (max-width: 1400px){
 
-	.dizifilm-slider-ic, .dizifilm-grid1-ic, .dizifilm-grid2-ic{
+	.dizifilm-slider-ic, .dizifilm-grid1-ic, .dizifilm-grid2-ic, .dizifilm-grid3-ic{
 		width: 1200px;
 	}
 
@@ -372,7 +415,7 @@ h5{
 
 @media screen and (max-width: 1300px){
 
-	.dizifilm-slider-ic, .dizifilm-grid1-ic, .dizifilm-grid2-ic{
+	.dizifilm-slider-ic, .dizifilm-grid1-ic, .dizifilm-grid2-ic, .dizifilm-grid3-ic{
 		width:1100px;
 	}
 

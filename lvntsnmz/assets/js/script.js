@@ -43,19 +43,7 @@ $(window).load(function() {
 
     /* SOLAR SYSTEM */
 
-
-
     $(".se-pre-con").fadeOut("slow");
-
-    $(function() {
-        $('#slides').superslides({
-            hashchange: false,
-            play: 7000,
-            inherit_height_from: $(window),
-            animation:'fade',
-            animation_easing:'linear'
-        });
-    });
 
     $('.grid4-box').slick({
         dots: true,
@@ -161,6 +149,16 @@ $(window).scroll(function(){
         }
 
     }
+});
+
+$(document).ready(function(){
+
+    $('.body-div').css('height',$( window ).height()-50);
+
+    $('.site-up').click(function(){
+       $("html, body").animate({ scrollTop: 0 }, "slow");
+    });
+
 });
 
 // $(document).ready(function(){

@@ -18,6 +18,26 @@
     <script type="text/javascript" src="assets/js/waterwheelcarousel/jquery.waterwheelCarousel.js"></script>
 
     <title>lvntsnmz</title>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+            var carousel = $("#carousel").waterwheelCarousel({
+                flankingItems: 3,
+                separation: 250,
+                autoPlay: 10000
+            });
+            $('#prev').bind('click', function () {
+                carousel.prev();
+                return false
+            });
+
+            $('#next').bind('click', function () {
+                carousel.next();
+                return false;
+            });
+                });
+    </script>
 </head>
 
 <body>
@@ -167,22 +187,34 @@
         </div>
     </div>
 
-    <!--<div class="dizifilm-grid2">-->
-        <!--<div class="dizifilm-grid2-ic">-->
-                <!--<div id="carousel">-->
-                    <!--<a href="#"><img src="assets/imgs/dizifilm/ExDrummer(2007).jpg" id="item-1" /></a>-->
-                    <!--<a href="#"><img src="assets/imgs/dizifilm/FarandAway(1992).jpg" id="item-2" /></a>-->
-                    <!--<a href="#"><img src="assets/imgs/dizifilm/FullMetalJacket(1987).jpg" id="item-3" /></a>-->
-                    <!--<a href="#"><img src="assets/imgs/dizifilm/Gwoemul(2006).jpg" id="item-4" /></a>-->
-                    <!--<a href="#"><img src="assets/imgs/dizifilm/Identity(2003).jpg" id="item-5" /></a>-->
-                    <!--<a href="#"><img src="assets/imgs/dizifilm/IntotheWild(2007).jpg" id="item-6" /></a>-->
-                    <!--<a href="#"><img src="assets/imgs/dizifilm/Jeuxdenfants(2004).jpg" id="item-7" /></a>-->
-                    <!--<a href="#"><img src="assets/imgs/dizifilm/MyGirl(1991).jpg" id="item-8" /></a>-->
-                    <!--<a href="#"><img src="assets/imgs/dizifilm/PayitForward(2000).jpg" id="item-9" /></a>-->
-                <!--</div>-->
-            <!--<a href="#" id="prev">Prev</a> | <a href="#" id="next">Next</a>-->
-        <!--</div>-->
-    <!--</div>-->
+    <div class="dizifilm-grid3">
+        <div class="dizifilm-grid3-ic">
+                <div id="carousel">
+                    <a href="#"><img src="assets/imgs/dizifilm/YeopgijeoGingeunyeo(2001).jpg" id="item-1" /></a>
+                    <a href="#"><img src="assets/imgs/dizifilm/WilliamShakespearesRomeoJuliet(1996).jpg" id="item-2" /></a>
+                    <a href="#"><img src="assets/imgs/dizifilm/TrueRomance(1993).jpg" id="item-3" /></a>
+                    <a href="#"><img src="assets/imgs/dizifilm/TrainingDay(2001).jpg" id="item-4" /></a>
+                    <a href="#"><img src="assets/imgs/dizifilm/ThisIstheEnd(2013).jpg" id="item-5" /></a>
+                    <a href="#"><img src="assets/imgs/dizifilm/TheWeddingSinger(1998).jpg" id="item-6" /></a>
+                    <a href="#"><img src="assets/imgs/dizifilm/TheGreenMile(1999).jpg" id="item-7" /></a>
+                    <a href="#"><img src="assets/imgs/dizifilm/TheFountain(2006).jpg" id="item-8" /></a>
+                    <a href="#"><img src="assets/imgs/dizifilm/TheButterflyEffect(2004).jpg" id="item-9" /></a>
+                    <a href="#"><img src="assets/imgs/dizifilm/SpyGame(2001).jpg" id="item-10" /></a>
+                    <a href="#"><img src="assets/imgs/dizifilm/Signs(2002).jpg" id="item-11" /></a>
+                    <a href="#"><img src="assets/imgs/dizifilm/SeulContreTous(1998).jpg" id="item-12" /></a>
+                    <a href="#"><img src="assets/imgs/dizifilm/RoadtoPerdition(2002).jpg" id="item-13" /></a>
+                    <a href="#"><img src="assets/imgs/dizifilm/Ray(2004).jpg" id="item-14" /></a>
+                    <a href="#"><img src="assets/imgs/dizifilm/Pleasantville(1998).jpg" id="item-15" /></a>
+                    <a href="#"><img src="assets/imgs/dizifilm/PK(2014).jpg" id="item-16" /></a>
+                    <a href="#"><img src="assets/imgs/dizifilm/PayitForward(2000).jpg" id="item-17" /></a>
+                    <a href="#"><img src="assets/imgs/dizifilm/MyGirl(1991).jpg" id="item-18" /></a>
+                    <a href="#"><img src="assets/imgs/dizifilm/Moon(2009).jpg" id="item-19" /></a>
+                    <a href="#"><img src="assets/imgs/dizifilm/Jeuxdenfants(2004).jpg" id="item-20" /></a>
+                </div>
+            <a id="prev"><i class="fa fa-caret-left"></i></a>
+            <a id="next"><i class="fa fa-caret-right"></i></a>
+        </div>
+    </div>
 
     <div class="footer">
         <div class="footer-ic">
@@ -197,9 +229,6 @@
 
 </body>
 
-<script src="assets/js/fullslider/javascripts/jquery.easing.1.3.js"></script>
-<script src="assets/js/fullslider/javascripts/jquery.animate-enhanced.min.js"></script>
-<script src="assets/js/fullslider/dist/jquery.superslides.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript" src="assets/js/slick-1.6.0/slick/slick.min.js"></script>
 <script type="text/javascript" src="assets/js/script.js"></script>
 
