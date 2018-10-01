@@ -21,6 +21,23 @@
 	background: rgba(0,0,0,0.5);
 }
 
+.header-logo i{
+	color: #fff;
+}
+
+.header-dizifilm  .header-logo h1 {
+	font-weight: 600;
+	color:#fff;
+	text-shadow: 0 0 4px #4c4c4c;
+}
+
+.header-dizifilm  .menu li {
+	color: #f5f5f5;
+}
+.header-dizifilm  .menu li p {
+	text-shadow: 0 0 4px #000;
+}
+
 .dizifilm-background{
 	background: url(../imgs/dizifilm/dizifilm_background.jpg) no-repeat center fixed;
 	background-color: #000;
@@ -356,12 +373,12 @@ h5{
 	position: relative;
 	z-index: 2;
 	width: 100%;
-	padding: 50px 0;
 	overflow:hidden;
 }
 
 .dizifilm-grid3-ic{
 	width: 1400px;
+	padding: 50px 0;
 	margin: auto;
 	overflow: hidden;
 	position: relative;
@@ -379,6 +396,10 @@ h5{
 	max-width:30%;
 	visibility:hidden; /* hide images until carousel can handle them */
 	cursor:pointer; /* otherwise it's not as obvious items can be clicked */
+	-webkit-box-shadow: 0 0 20px 0 rgba(0,0,0,.39);
+	-moz-box-shadow: 0 0 20px 0 rgba(0,0,0,.39);
+	box-shadow: 0 30px 50px 5px rgba(0,0,0,.4);
+	border: 2px solid rgba(0,0,0,.25);
 }
 
 .dizifilm-grid3-ic #prev, .dizifilm-grid3-ic #next{
