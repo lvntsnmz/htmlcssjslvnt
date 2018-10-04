@@ -1,0 +1,84 @@
+.dizifilmdetay-background{
+    background:none;
+}
+
+.dizifilmdetay-background::before{
+    background-color: rgba(0, 0, 0, 0.5);
+    -moz-transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+
+.dizifilmdetay-background.dark::before{
+    background-color: rgba(0, 0, 0, 0.8);
+    -moz-transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+
+.detay-fake-slider{
+    width:100%;
+    height:100%;
+}
+
+.detay-grid1{
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    padding: 50px 0;
+    overflow:hidden;
+    background: rgba(0,0,0,0.04);
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.04) 0%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 25%, rgba(0,0,0,0.67) 50%, rgba(0,0,0,0.83) 74%, rgba(0,0,0,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,0.04)), color-stop(0%, rgba(0,0,0,0)), color-stop(25%, rgba(0,0,0,0.5)), color-stop(50%, rgba(0,0,0,0.67)), color-stop(74%, rgba(0,0,0,0.83)), color-stop(100%, rgba(0,0,0,1)));
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.04) 0%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 25%, rgba(0,0,0,0.67) 50%, rgba(0,0,0,0.83) 74%, rgba(0,0,0,1) 100%);
+    background: -o-linear-gradient(top, rgba(0,0,0,0.04) 0%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 25%, rgba(0,0,0,0.67) 50%, rgba(0,0,0,0.83) 74%, rgba(0,0,0,1) 100%);
+    background: -ms-linear-gradient(top, rgba(0,0,0,0.04) 0%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 25%, rgba(0,0,0,0.67) 50%, rgba(0,0,0,0.83) 74%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0.04) 0%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 25%, rgba(0,0,0,0.67) 50%, rgba(0,0,0,0.83) 74%, rgba(0,0,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
+}
+
+.detay-grid1-ic{
+    width: 1400px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.detay-grid1-ic h1{
+    font-size: 32px;
+    font-weight: 500;
+    color: #f5f5f5;
+    padding-bottom: 25px;
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+}
+
+.detay-grid1-ic p{
+    font-size: 16px;
+    color: #e5f5fa;
+    font-weight: 100;
+    padding-bottom: 20px;
+    line-height: 30px;
+    text-indent: 30px;
+    font-family: 'Indie Flower', cursive;
+}
+
+
+@media screen and (max-width: 1400px){
+
+    .detay-grid1-ic{
+        width: 1200px;
+    }
+
+}
+
+@media screen and (max-width: 1300px){
+
+    .detay-grid1-ic{
+        width:1100px;
+    }
+
+}

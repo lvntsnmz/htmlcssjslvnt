@@ -13,31 +13,8 @@
     <link rel="stylesheet" type="text/css" href="assets/js/slick-1.6.0/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="assets/js/slick-1.6.0/slick/slick-theme.css"/>
 
-    <script src="assets/js/jquery-1.10.2.min.js"></script>
-    <script type="text/javascript" src="assets/js/modernizr-2.6.2.min.js"></script>
-    <script type="text/javascript" src="assets/js/waterwheelcarousel/jquery.waterwheelCarousel.js"></script>
-
     <title>lvntsnmz</title>
 
-    <script type="text/javascript">
-        $(document).ready(function(){
-
-            var carousel = $("#carousel").waterwheelCarousel({
-                flankingItems: 3,
-                separation: 250,
-                autoPlay: 10000
-            });
-            $('#prev').bind('click', function () {
-                carousel.prev();
-                return false
-            });
-
-            $('#next').bind('click', function () {
-                carousel.next();
-                return false;
-            });
-                });
-    </script>
 </head>
 
 <body>
@@ -56,7 +33,7 @@
                 </div>
             </a>
             <ul class="menu menu-up">
-                <a href="#">
+                <a href="dizifilm.html">
                     <li>
                         <i class="fa fa-adjust" aria-hidden="true"></i>
                         <p>
@@ -79,10 +56,12 @@
     <div class="dizifilm-slider">
         <div class="dizifilm-slider-ic">
             <ul>
-                <li>
-                    <div><img src="assets/imgs/dizifilm/25thHour(2002).jpg" alt="25th Hour (2002)"></div>
-                    <h5>25th Hour (2002)</h5>
-                </li>
+                <a href="dizifilmdetay.html">
+                    <li>
+                        <div><img src="assets/imgs/dizifilm/25thHour(2002).jpg" alt="25th Hour (2002)"></div>
+                        <h5>25th Hour (2002)</h5>
+                    </li>
+                </a>
                 <li>
                     <div><img src="assets/imgs/dizifilm/BeingJohnMalkovich(1999).jpg" alt="Being Jonh Malkovich (1999)"></div>
                     <h5>Being Jonh Malkovich (1999)</h5>
@@ -229,7 +208,31 @@
 
 </body>
 
+<script src="assets/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="assets/js/modernizr-2.6.2.min.js"></script>
+<script type="text/javascript" src="assets/js/waterwheelcarousel/jquery.waterwheelCarousel.js"></script>
 <script type="text/javascript" src="assets/js/slick-1.6.0/slick/slick.min.js"></script>
 <script type="text/javascript" src="assets/js/script.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+
+        var carousel = $("#carousel").waterwheelCarousel({
+            flankingItems: 3,
+            separation: 250,
+            autoPlay: 10000
+        });
+        $('#prev').bind('click', function () {
+            carousel.prev();
+            return false
+        });
+
+        $('#next').bind('click', function () {
+            carousel.next();
+            return false;
+        });
+    });
+</script>
+
 
 </html>
