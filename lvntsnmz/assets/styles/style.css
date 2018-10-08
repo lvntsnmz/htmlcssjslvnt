@@ -75,6 +75,11 @@ table {
 	background: url(../imgs/preloader_3.gif) center no-repeat #fff;
 }
 
+a.on{
+	pointer-events: none;
+	cursor: default;
+}
+
 .main
 {
 	width: 100%;
@@ -147,6 +152,14 @@ table {
 	color:#000;
 }
 
+.header-logo:hover i{
+	transform: rotate(360deg);
+	-moz-transition: 0.75s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+	-webkit-transition: 0.75s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+	-o-transition: 0.75s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+	transition: 0.75s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
 .header-logo h1 {
 	font-size: 12px;
 	font-weight: 700;
@@ -206,10 +219,10 @@ table {
 
 .menu li i {
 	font-size: 35px;
-	-moz-transition: 0.25s ease-in-out;
-	-webkit-transition: 0.25s ease-in-out;
-	-o-transition: 0.25s ease-in-out;
-	transition: 0.25s ease-in-out;
+	-moz-transition: 0.25s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+	-webkit-transition: 0.25s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+	-o-transition: 0.25s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+	transition: 0.25s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
 .menu li p{
