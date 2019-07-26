@@ -89,11 +89,20 @@
     font-family: 'Indie Flower', cursive;
 }
 
+/*Responsive Start*/
+
+@media screen and (max-width: 1500px){
+
+    .detay-grid1-ic{
+        width: 1300px;
+    }
+
+}
 
 @media screen and (max-width: 1400px){
 
     .detay-grid1-ic{
-        width: 1100px;
+        width: 1200px;
     }
 
 }
@@ -101,7 +110,71 @@
 @media screen and (max-width: 1300px){
 
     .detay-grid1-ic{
+        width:1100px;
+    }
+
+}
+
+@media screen and (max-width: 1200px){
+
+    .detay-grid1-ic{
         width:1000px;
+    }
+
+}
+
+@media screen and (max-width: 1100px){
+
+    .detay-grid1-ic{
+        width:900px;
+    }
+
+}
+
+@media screen and (max-width: 1000px){
+
+    .detay-grid1-ic{
+        width:800px;
+    }
+
+}
+
+@media screen and (max-width: 900px){
+
+    .detay-grid1-ic{
+        width:700px;
+    }
+
+}
+
+@media screen and (max-width: 800px){
+
+    .detay-grid1-ic{
+        width:600px;
+    }
+
+}
+
+@media screen and (max-width: 700px){
+
+    .detay-grid1-ic{
+        width:500px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .detay-grid1-ic {
+        width: 400px;
+    }
+
+}
+
+@media screen and (max-width: 500px){
+
+    .detay-grid1-ic{
+        width:90%;
     }
 
 }

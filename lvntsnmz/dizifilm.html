@@ -34,6 +34,26 @@
     <div class="se-pre-con"> </div>
 
     <div class="main-background dizifilm-background"> </div>
+
+    <nav class="mobile-menu-nav" role="navigation">
+        <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+                <li><a class="nav-a" href="dizifilm.html">dizifilm</a></li>
+                <li><a class="nav-a"  href="#">w-log</a></li>
+            </ul>
+        </div>
+        <a href="index.html">
+            <div class="mobile-logo">
+                <i class="fa fa-code fa-2x"></i>
+                <h1>lvntsnmz</h1>
+            </div>
+        </a>
+    </nav>
+
     <div class="header header-dizifilm" style="color:#000000;">
         <div class="header-ic">
             <a href="index.html">
@@ -68,7 +88,7 @@
             <ul>
                 <a href="dizifilmdetay.html">
                     <li>
-                        <div><img src="assets/imgs/dizifilm/25thHour(2002).jpg" alt="25th Hour (2002)"></div>
+                        <div id="bilmemne"><img src="assets/imgs/dizifilm/25thHour(2002).jpg" alt="25th Hour (2002)"></div>
                         <h5>25th Hour (2002)</h5>
                     </li>
                 </a>
@@ -207,7 +227,7 @@
 
     <div class="footer">
         <div class="footer-ic">
-            <p>Copyright © 2018</p>
+            <p>Copyright © 2019</p>
         </div>
     </div>
 
@@ -225,11 +245,31 @@
 <script type="text/javascript">
     $(document).ready(function(){
 
-        var carousel = $("#carousel").waterwheelCarousel({
-            flankingItems: 3,
-            separation: 250,
-            autoPlay: 10000
-        });
+        if ($(window).width()>1200) {
+            var carousel = $("#carousel").waterwheelCarousel({
+                flankingItems: 3,
+                separation: 250,
+                autoPlay: 10000
+            });
+        }  if ($(window).width()<=1200) {
+            var carousel = $("#carousel").waterwheelCarousel({
+                flankingItems: 2,
+                separation: 150,
+                autoPlay: 10000
+            });
+        }   if ($(window).width()<=800) {
+            var carousel = $("#carousel").waterwheelCarousel({
+                flankingItems: 1,
+                separation: 100,
+                autoPlay: 10000
+            });
+        }  if ($(window).width()<=500) {
+            var carousel = $("#carousel").waterwheelCarousel({
+                flankingItems: 1,
+                separation: 75,
+                autoPlay: 10000
+            });
+        }
         $('#prev').bind('click', function () {
             carousel.prev();
             return false
