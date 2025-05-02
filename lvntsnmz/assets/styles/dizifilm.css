@@ -190,8 +190,9 @@
 	padding: 5px;
 }
 
-.dizifilm-slider li:nth-child(n+6) div{
-
+.dizifilm-slider li:nth-child(n+6) div img{
+  height:200px;
+  object-fit:cover;
 }
 
 .dizifilm-slider li:nth-child(n+6):hover
