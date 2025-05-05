@@ -231,7 +231,7 @@ table {
 
 /* Header Başlangıç */
 
-.header{
+header{
 	width: 100%;
 	margin-top: 15px;
 	position: fixed;
@@ -289,7 +289,7 @@ table {
 	transition: 0.75s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
-.header-logo h1, .mobile-logo h1{
+.header-logo h6, .mobile-logo h6{
 	font-size: 12px;
 	font-weight: 700;
 	letter-spacing: 0.5px;
@@ -297,24 +297,24 @@ table {
 	color:#000;
 }
 
-.header.scrolldown{
+header.scrolldown{
 	background: rgba(255,255,255,1);
 	margin-top: 0;
 	border-color: #4c4c4c;
 	border-top: none;
 }
 
-.header.scrolldown .header-logo i{
+header.scrolldown .header-logo i{
 	color:#000000;
 }
 
-.header.scrolldown .header-logo h1 {
+header.scrolldown .header-logo h6 {
 	font-size: 10px;
 	text-shadow: none;
 	color: #000;
 }
 
-.header.scrolldown .header-logo i{
+header.scrolldown .header-logo i{
 	font-size: 2em;
 	text-shadow:none;
 }
@@ -529,7 +529,7 @@ table {
 	overflow:hidden;
 }
 
-.grid1-ic>h1 {
+.grid1-ic>h2 {
 	font-size: 30px;
 	color: #4c4c4c;
 	width: 50%;
@@ -538,7 +538,7 @@ table {
 	font-weight: 500;
 }
 
-.grid1-ic>h1 b{
+.grid1-ic>h2 b{
 	font-weight:600;
 }
 
@@ -750,6 +750,8 @@ h3 {
 	padding:50px 0;
 	animation: blink 20s linear infinite;
 	-webkit-animation: blink 20s linear infinite;
+	-o-animation: blink 20s linear infinite;
+	-moz-animation: blink 20s linear infinite;
 }
 
 .grid3-ic{
@@ -920,7 +922,7 @@ h3 {
 	height: 100px !important;
 }
 
-.footer {
+footer {
 	width: 100%;
 	position: relative;
 	z-index: 1;
@@ -1024,7 +1026,7 @@ h3 {
 		font-size:25px;
 	}
 
-	.grid1-ic>h1 {
+	.grid1-ic>h2 {
 		font-size: 20px;
 	}
 
@@ -1056,7 +1058,7 @@ h3 {
 		font-size:20px;
 	}
 
-	.grid1-ic>h1 {
+	.grid1-ic>h2 {
 		font-size: 15px;
 	}
 

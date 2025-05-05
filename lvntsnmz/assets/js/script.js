@@ -120,9 +120,9 @@ $(window).scroll(function(){
     if ($(window).width()>900) {
 
         if ($(window).scrollTop() != 0) {
-            $('.header').addClass('scrolldown');
+            $('header').addClass('scrolldown');
         } else {
-            $('.header').removeClass('scrolldown');
+            $('header').removeClass('scrolldown');
         }
 
         if ($(window).scrollTop() != 0) {
